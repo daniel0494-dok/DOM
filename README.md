@@ -43,15 +43,10 @@ Vanilla JavaScript (ES6+): Manipulasi DOM, event handling (querySelectorAll, for
 📂 Struktur Proyek
 
 ├── src/
-
 │   ├── index.html      # Kerangka utama halaman detail produk
-
 │   ├── script.js       # Logika data produk, rendering DOM, dan interaktivitas
-
 │   ├── output.css      # File CSS hasil kompilasi Tailwind & custom style
-
 │   └── asset/          # Direktori aset gambar produk
-
 └── README.md           # Dokumentasi proyek
 
 

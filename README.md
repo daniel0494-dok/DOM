@@ -4,41 +4,41 @@ Proyek ini adalah halaman detail produk (Product Detail Page) interaktif berbasi
 
 🚀 Fitur Utama
 
-Dynamic Content Rendering
+1. Dynamic Content Rendering
 
-Seluruh informasi produk (nama, deskripsi, harga, dan galeri foto) dirender secara dinamis dari satu sumber data terpusat (productData object), memisahkan logika data dari kerangka HTML.
+- Seluruh informasi produk (nama, deskripsi, harga, dan galeri foto) dirender secara dinamis dari satu sumber data terpusat (productData object), memisahkan logika data dari kerangka HTML.
 
-Format mata uang otomatis menggunakan toLocaleString() untuk konversi tipe data angka (number) menjadi format mata uang yang rapi (USD).
+- Format mata uang otomatis menggunakan toLocaleString() untuk konversi tipe data angka (number) menjadi format mata uang yang rapi (USD).
 
-Interactive Image Gallery
+2. Interactive Image Gallery
 
-Pembuatan elemen thumbnail secara dinamis dari array gambar.
+- Pembuatan elemen thumbnail secara dinamis dari array gambar.
 
-Pengguna dapat mengklik thumbnail mana pun untuk mengganti tampilan gambar utama (main image) secara real-time.
+- Pengguna dapat mengklik thumbnail mana pun untuk mengganti tampilan gambar utama (main image) secara real-time.
 
-Quantity Selector dengan Validasi
+3. Quantity Selector dengan Validasi
 
-Kontrol tombol tambah (+) dan kurang (-) yang interaktif.
+- Kontrol tombol tambah (+) dan kurang (-) yang interaktif.
 
-Dilengkapi dengan validasi pengaman agar jumlah pesanan tidak bisa turun di bawah batas minimal (tidak bernilai negatif/minus).
+- Dilengkapi dengan validasi pengaman agar jumlah pesanan tidak bisa turun di bawah batas minimal (tidak bernilai negatif/minus).
 
-Dynamic Size Selection
+4. Dynamic Size Selection
 
-Pengelolaan status tombol ukuran (S, M, L, XL) menggunakan manipulasi kelas CSS (active dan disabled).
+- Pengelolaan status tombol ukuran (S, M, L, XL) menggunakan manipulasi kelas CSS (active dan disabled).
 
-Otomatis memindahkan status aktif saat ukuran yang tersedia diklik, serta memblokir interaksi pada ukuran yang stoknya kosong (disabled).
+- Otomatis memindahkan status aktif saat ukuran yang tersedia diklik, serta memblokir interaksi pada ukuran yang stoknya kosong (disabled).
 
-Responsive Navigation
+5. Responsive Navigation
 
-Menu navigasi responsif yang mendukung tampilan desktop maupun perangkat mobile dengan fitur toggle menu.
+- Menu navigasi responsif yang mendukung tampilan desktop maupun perangkat mobile dengan fitur toggle menu.
 
 🛠️ Teknologi yang Digunakan
 
-HTML5: Struktur kerangka halaman yang bersih dan semantik.
+- HTML5: Struktur kerangka halaman yang bersih dan semantik.
 
-Tailwind CSS & Custom CSS: Styling responsif dan pengelolaan status tombol (active / disabled).
+- Tailwind CSS & Custom CSS: Styling responsif dan pengelolaan status tombol (active / disabled).
 
-Vanilla JavaScript (ES6+): Manipulasi DOM, event handling (querySelectorAll, forEach, addEventListener), dan manajemen data produk.
+- Vanilla JavaScript (ES6+): Manipulasi DOM, event handling (querySelectorAll, forEach, addEventListener), dan manajemen data produk.
 
 📂 Struktur Proyek
 
@@ -57,10 +57,10 @@ Vanilla JavaScript (ES6+): Manipulasi DOM, event handling (querySelectorAll, for
 
 💻 Cara Menjalankan Proyek
 
-Pastikan seluruh file berada dalam struktur direktori yang sesuai.
+1. Pastikan seluruh file berada dalam struktur direktori yang sesuai.
 
-Buka proyek menggunakan Visual Studio Code.
+2. Buka proyek menggunakan Visual Studio Code.
 
-Jalankan src/index.html menggunakan ekstensi Live Server (atau buka langsung melalui browser modern).
+3. Jalankan src/index.html menggunakan ekstensi Live Server (atau buka langsung melalui browser modern).
 
-Interaksi galeri gambar, tombol quantity, dan pemilihan ukuran siap digunakan.
+4. Interaksi galeri gambar, tombol quantity, dan pemilihan ukuran siap digunakan.

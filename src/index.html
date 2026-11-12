@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="text-brand-900">
+    <!-- HEADER -->
+    <header class="flex justify-between items-center p-4">
+      <div class="">
+        <h1>LOGO</h1>
+      </div>
+      <ul id="mobile-menu" class="hidden md:flex gap-3">
+        <li>
+          <a
+            href=""
+            class="hover:bg-brand-900 hover:text-brand-700 duration-300 p-4 rounded-lg"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href=""
+            class="hover:bg-brand-900 hover:text-brand-700 duration-300 p-4 rounded-lg"
+            >Shop</a
+          >
+        </li>
+        <li>
+          <a
+            href=""
+            class="hover:bg-brand-900 hover:text-brand-700 duration-300 p-4 rounded-lg"
+            >About</a
+          >
+        </li>
+      </ul>
+      <button id="menu-btn" class="flex flex-col gap-1 md:hidden">
+        <span class="w-5 h-1 bg-brand-900 rounded-full"></span>
+        <span class="w-5 h-1 bg-brand-900 rounded-full"></span>
+        <span class="w-5 h-1 bg-brand-900 rounded-full"></span>
+      </button>
+    </header>
+    <main class="page-container">
+      <!-- PAGE CONTENT -->
+      <div class="product-grid-container p-4 gap-10 lg:gap-20">
+        <!-- BREAD CRUMB -->
+        <!-- <div class="">
+          <p class="text-sm">Home / <strong>Product Details</strong></p>
+        </div> -->
+        <!-- PRODUCT IMAGE -->
+        <div class="flex flex-col gap-2">
+          <div class="">
+            <img
+              id="main-img"
+              class="rounded-l-lg w-full aspect-square object-cover"
+              src=""
+              alt=""
+            />
+          </div>
+          <div id="thumbnail-container" class="grid grid-cols-5 gap-2"></div>
+        </div>
+        <!-- PRODUCT DESCRIPTION -->
+        <div class="flex flex-col gap-8">
+          <!-- NAME & PRICE -->
+          <div class="">
+            <h2 id="product-name" class="text-2xl font-bold">Product Name</h2>
+            <span id="product-price" class="font-bold text-xl">$Price</span>
+          </div>
+          <!-- SHORT DESCRIPTION -->
+          <div class="description-point">
+            <h3 class="mb-2"><strong>Description & fit</strong></h3>
+            <p id="product-description" class="text-brand-700">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus
+              maiores odit delectus ipsa perspiciatis, ut repellat, iste tempora
+              illum unde eos. Reprehenderit ipsa culpa magnam!
+            </p>
+          </div>
+          <div class="">
+            <span class="text-sm text-brand-700 inline-block mb-2"
+              >Quantity</span
+            >
+            <div class="">
+              <button
+                id="decrease-btn"
+                class="border px-3 py-1 rounded-md duration-300 cursor-pointer hover:bg-brand-900 hover:text-brand-700"
+              >
+                -
+              </button>
+              <span id="quantity-value" class="px-3 py-1">0</span>
+              <button
+                id="increase-btn"
+                class="border px-3 py-1 rounded-md duration-300 cursor-pointer hover:bg-brand-900 hover:text-brand-700"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <!-- SIZE & ADD CART -->
+          <div class="">
+            <span class="text-brand-700 text-sm inline-block mb-2"
+              >Select Size</span
+            >
+            <div class="flex flex-col gap-4">
+              <div
+                id="size-container"
+                class="flex w-full justify-between items-center gap-2"
+              >
+                <button class="button active">S</button>
+                <button class="button">M</button>
+                <button class="button disabled">L</button>
+                <button class="button">XL</button>
+              </div>
+              <div class="">
+                <button class="button-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- SHIPPING -->
+          <div class="description-point">
+            <h3 class="mb-2">
+              <strong> Shipping </strong>
+            </h3>
+            <div class="grid grid-cols-2">
+              <div class="flex items-center gap-2">
+                <div class="p-2 rounded-full bg-brand-300">
+                  <svg
+                    class="w-4 h-4"
+                    fill="#000000"
+                    width="800px"
+                    height="800px"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    enable-background="new 0 0 24 24"
+                  >
+                    <path
+                      d="M2,19c0,1.7,1.3,3,3,3h14c1.7,0,3-1.3,3-3v-8H2V19z M19,4h-2V3c0-0.6-0.4-1-1-1s-1,0.4-1,1v1H9V3c0-0.6-0.4-1-1-1S7,2.4,7,3v1H5C3.3,4,2,5.3,2,7v2h20V7C22,5.3,20.7,4,19,4z"
+                    />
+                  </svg>
+                </div>
+
+                <div class="">
+                  <span class="text-sm text-brand-700">Delivery Time</span>
+                  <p>3-4 Working Days</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <div class="p-2 rounded-full bg-brand-300">
+                  <svg
+                    class="w-4 h-4"
+                    fill="#000000"
+                    width="800px"
+                    height="800px"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    enable-background="new 0 0 24 24"
+                  >
+                    <path
+                      d="M2,19c0,1.7,1.3,3,3,3h14c1.7,0,3-1.3,3-3v-8H2V19z M19,4h-2V3c0-0.6-0.4-1-1-1s-1,0.4-1,1v1H9V3c0-0.6-0.4-1-1-1S7,2.4,7,3v1H5C3.3,4,2,5.3,2,7v2h20V7C22,5.3,20.7,4,19,4z"
+                    />
+                  </svg>
+                </div>
+
+                <div class="">
+                  <span class="text-sm text-brand-700">Delivery Time</span>
+                  <p>3-4 Working Days</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <div class="p-2 rounded-full bg-brand-300">
+                  <svg
+                    class="w-4 h-4"
+                    fill="#000000"
+                    width="800px"
+                    height="800px"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    enable-background="new 0 0 24 24"
+                  >
+                    <path
+                      d="M2,19c0,1.7,1.3,3,3,3h14c1.7,0,3-1.3,3-3v-8H2V19z M19,4h-2V3c0-0.6-0.4-1-1-1s-1,0.4-1,1v1H9V3c0-0.6-0.4-1-1-1S7,2.4,7,3v1H5C3.3,4,2,5.3,2,7v2h20V7C22,5.3,20.7,4,19,4z"
+                    />
+                  </svg>
+                </div>
+
+                <div class="">
+                  <span class="text-sm text-brand-700">Delivery Time</span>
+                  <p>3-4 Working Days</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <div class="p-2 rounded-full bg-brand-300">
+                  <svg
+                    class="w-4 h-4"
+                    fill="#000000"
+                    width="800px"
+                    height="800px"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    enable-background="new 0 0 24 24"
+                  >
+                    <path
+                      d="M2,19c0,1.7,1.3,3,3,3h14c1.7,0,3-1.3,3-3v-8H2V19z M19,4h-2V3c0-0.6-0.4-1-1-1s-1,0.4-1,1v1H9V3c0-0.6-0.4-1-1-1S7,2.4,7,3v1H5C3.3,4,2,5.3,2,7v2h20V7C22,5.3,20.7,4,19,4z"
+                    />
+                  </svg>
+                </div>
+
+                <div class="">
+                  <span class="text-sm text-brand-700">Delivery Time</span>
+                  <p>3-4 Working Days</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- <div class="aspect-square">
+              <img
+                src="asset/wallhaven-6levk6_3840x2160.png"
+                class="w-full h-full object-cover rounded-lg"
+                alt=""
+              />
+            </div>
+            <div class="aspect-square">
+              <img
+                src="asset/wallhaven-6levk6_3840x2160.png"
+                class="w-full h-full object-cover rounded-lg"
+                alt=""
+              />
+            </div>
+            <div class="aspect-square">
+              <img
+                src="asset/wallhaven-6levk6_3840x2160.png"
+                class="w-full h-full object-cover rounded-lg"
+                alt=""
+              />
+            </div> -->

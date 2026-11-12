@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-900: #232327;
+  --color-brand-700: #959595;
+  --color-brand-300: #ededed;
+  --color-brand-100: #f6f6f6;
+}
+
+.page-container {
+  max-width: 1024px;
+  margin: auto;
+}
+
+.product-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.button {
+  width: 100%;
+  border-radius: 40px;
+  padding: 16px;
+  background-color: var(--color-brand-300);
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.button-cart {
+  width: 100%;
+  border-radius: 40px;
+  padding: 16px;
+  background-color: var(--color-brand-900);
+  color: var(--color-brand-300);
+}
+
+.button-cart:hover {
+  background-color: var(--color-brand-300);
+  color: var(--color-brand-900);
+  transition-duration: 300ms;
+  cursor: pointer;
+}
+
+.button.active,
+.button:hover:not(.button.disabled) {
+  background-color: var(--color-brand-900);
+  color: var(--color-brand-300);
+}
+.button.disabled {
+  color: var(--color-brand-700);
+  cursor: not-allowed;
+}
